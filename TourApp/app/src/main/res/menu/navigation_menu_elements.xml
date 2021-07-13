@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home_black_24dp"
+            android:padding="0dp"
+            android:title="@string/home"/>
+        <item
+            android:id="@+id/nav_esplora"
+            android:icon="@drawable/ic_explore_black_24dp"
+            android:padding="0dp"
+            android:title="@string/esplora" />
+
+        <item
+            android:id="@+id/nav_coutpon"
+            android:icon="@drawable/ic_coupon"
+            android:padding="0dp"
+            android:title="@string/my_coup" />
+
+        <item
+            android:id="@+id/nav_diari"
+            android:icon="@drawable/ic_diario"
+            android:padding="5dp"
+            android:title="@string/mio_diario" />
+
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@drawable/ic_gps_location"
+            android:padding="0dp"
+            android:title="@string/location" />
+
+
+    </group>
+
+    <group
+        android:id="@+id/line"
+        android:checkableBehavior="single">
+
+
+        <item
+            android:id="@+id/nav_cms"
+            android:icon="@drawable/ic_menu_manage"
+            android:padding="0dp"
+            android:title="@string/area_privata" />
+
+
+
+        <item
+            android:id="@+id/nav_operator"
+            android:icon="@drawable/ic_wifi"
+            android:padding="0dp"
+            android:title="@string/sezione_operatore" />
+
+        <item
+            android:id="@+id/nav_settings"
+            android:icon="@drawable/login_icon"
+            android:padding="0dp"
+            android:title="@string/profile" />
+
+    </group>
+
+    <group
+
+        android:id="@+id/line2"
+        android:checkableBehavior="single">
+
+
+    <item
+            android:id="@+id/nav_login"
+            android:icon="@drawable/login"
+            android:padding="0dp"
+            android:title="@string/login" />
+
+
+        <item
+            android:id="@+id/nav_signup"
+            android:icon="@drawable/register"
+            android:padding="0dp"
+            android:title="@string/registrati" />
+
+
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:padding="0dp"
+            android:title="@string/logout" />
+
+    </group>
+
+
+
+</menu>

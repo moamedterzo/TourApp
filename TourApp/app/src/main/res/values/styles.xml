@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorArancioApp</item>
+    </style>
+    <!-- Stile da mettere per i navigation view-->
+    <style name="NavViewStyle" parent="Widget.Design.NavigationView">
+
+        <item name="itemBackground">@color/background_navigation_view</item>
+        <item name="itemIconTint">@color/colorGiall</item>
+        <item name="itemTextColor">@color/Bianco</item>
+    </style>
+
+    <style name="colorToolbar" parent="Widget.AppCompat.Toolbar">
+
+        <item name="titleTextColor">@color/textColorBar</item>
+        <item name="android:background">@color/colorArancioApp2</item>
+    </style>
+
+
+
+    <style name="colorText">
+        <item name="android:textColor">@color/Bianco</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--Stile con forma arrotondata , testo bianco e colore arancione con ombra di 6dp , il colore e la forma sono modificabili nel file row_background.xml  -->
+    <style name="rowStyle">
+        <item name="android:textColor">@color/Bianco</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:background">@color/colorBackgraound</item>
+        <item name="android:layout_width">130dp</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:translationZ">6dp</item>
+
+    </style>
+
+    <style name="myDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowNoTitle">true</item>
+        <item name="colorAccent">@color/colorGiall</item>
+    </style>
+
+    <style name="HintText" parent="TextAppearance.Design.Hint">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="CounterText" parent="TextAppearance.Design.Counter">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBotton</item>
+    </style>
+
+    <style name="CounterOverFlow" parent="TextAppearance.Design.Counter.Overflow">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorRed</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:textColor">@color/textUnder</item>
+        <item name="android:backgroundTint">@color/Bianco</item>
+    </style>
+
+    <style name="titoliColor">
+        <item name="android:textColor">@color/colorGiall</item>
+    </style>
+
+
+
+    <style name="ErrorText" parent="TextAppearance.Design.Error">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/colorBotton</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoActionBar.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.NoActionBar.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+</resources>

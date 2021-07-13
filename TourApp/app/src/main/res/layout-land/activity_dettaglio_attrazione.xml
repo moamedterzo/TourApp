@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DettaglioAttrazioneActivity">
+    <android.support.design.widget.CoordinatorLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DettaglioAttrazioneActivity">
+
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorAppBar"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:title="@string/explorButton" />
+
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+                 <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recview_Img"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/Bianco"
+                        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                </ScrollView>
+     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/orario"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtOrariMattina"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="8-13"
+        android:textSize="15dp" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/descrizione"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtDescrizione"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="sono bello ma fumo duiqwhddoheohpewjfpirwjbpirejvp3rfenglkegnlerhiehierhviefhirhrighilererijribijgijgerjvoeiiiiiiiiiiii"
+        android:textSize="15dp" />
+
+    <TextView
+        android:id="@+id/txtCostosità"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="€€€€   "
+        android:textAlignment="textEnd"
+        android:textSize="13dp"
+        android:textStyle="bold" />
+    <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            tools:context=".MapsActivity" />
+
+    <TextView
+        android:id="@+id/txtContatti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/contatti"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:paddingTop="25dp"/>
+
+    <Button
+        android:id="@+id/salva_rec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorGiall"
+        android:text="@string/salva" />
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBackgraound"
+            android:id="@+id/recview_recensioni"/>
+    </LinearLayout>
+
+
+    <RatingBar
+        android:id="@+id/RatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackgraound"
+
+        android:numStars="5" />
+
+    <EditText
+        android:id="@+id/recensioni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="25dp"
+        android:text=""
+        android:textSize="20dp"
+        android:visibility="gone" />
+    <Button
+        android:id="@+id/btn_explora"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_explore_arancio_24dp"
+        app:layout_anchor="@+id/scrollView2"
+        app:layout_anchorGravity="right|top" />
+</LinearLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/navigation_menu"/>
+</android.support.v4.widget.DrawerLayout>

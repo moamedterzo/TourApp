@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout3"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/colorBackgraound">
+
+    <TextView
+        android:id="@+id/titolo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_font_size"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Coupon 1"
+        style="@style/titoliColor"/>
+
+    <TextView
+        android:id="@+id/sconto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/default_font_size"
+        app:layout_constraintTop_toBottomOf="@+id/titolo"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="50€"
+        style="@style/editText"/>
+
+    <View
+        android:layout_width="459dp"
+        android:layout_height="1dp"
+        android:backgroundTint="@color/colorAppBar"
+        android:padding="5dp"
+        android:background="@drawable/shadow"
+        app:layout_constraintTop_toBottomOf="@+id/sconto"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-27dp" />
+
+</android.support.constraint.ConstraintLayout>

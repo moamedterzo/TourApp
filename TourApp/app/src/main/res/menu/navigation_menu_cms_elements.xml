@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_attrazioni"
+            android:icon="@drawable/fireworks"
+            android:padding="0dp"
+            android:title="@string/attractions" />
+
+        <item
+            android:id="@+id/nav_coupon"
+            android:icon="@drawable/ic_coupon"
+            android:padding="0dp"
+            android:title="@string/coupon" />
+
+
+        <item
+            android:id="@+id/nav_utenti"
+            android:icon="@drawable/utenti_settings"
+            android:padding="0dp"
+            android:title="@string/utenti" />
+    </group>
+
+    <group
+        android:id="@+id/line" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_cat_attrazioni"
+            android:icon="@drawable/checklist"
+            android:padding="0dp"
+            android:title="@string/categorie_attr" />
+
+        <item
+            android:id="@+id/nav_tag_attrazioni"
+            android:icon="@drawable/hastag"
+            android:padding="0dp"
+            android:title="@string/tag_attrazioni" />
+        <item
+            android:id="@+id/nav_cat_coupon"
+            android:icon="@drawable/checklist"
+            android:padding="0dp"
+            android:title="@string/categ_coup" />
+
+        <item
+            android:id="@+id/nav_dati_generali"
+            android:icon="@drawable/settings"
+            android:padding="0dp"
+            android:title="@string/dati_gen" />
+    </group>
+
+    <group
+        android:id="@+id/lin2" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_area_pubblica"
+            android:icon="@drawable/general"
+            android:padding="0dp"
+            android:title="@string/area_pub" />
+    </group>
+
+    <group
+        android:id="@+id/line3" android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_logout"
+            android:icon="@drawable/logout"
+            android:padding="0dp"
+            android:title="@string/logout" />
+    </group>
+
+</menu>

@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout_cms"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.52"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorAppBar"
+                app:title="@string/dett_attrazione"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+               <android.support.constraint.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorBackgraound"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                   <LinearLayout
+                       android:id="@+id/ll_immagini"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:layout_marginTop="8dp"
+                       android:orientation="horizontal"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent">
+
+                       <ScrollView
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content">
+
+                           <android.support.v7.widget.RecyclerView
+                               android:id="@+id/recview_Img"
+                               android:layout_width="match_parent"
+                               android:layout_height="wrap_content"
+                               android:background="@color/colorBackgraound"
+                               app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+                       </ScrollView>
+                   </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/textView12"
+                    style="@style/titoliColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="4dp"
+                    android:padding="16dp"
+                    android:text="@string/titolo_eng"
+                    android:textAlignment="viewStart"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/ll_immagini" />
+
+                <EditText
+                    android:id="@+id/titolo"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                   <TextView
+                       android:id="@+id/textView22It"
+                       style="@style/titoliColor"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginTop="18dp"
+                       android:layout_marginEnd="8dp"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text="Titolo italiano"
+                       android:textAlignment="viewStart"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.0"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/titolo" />
+
+                   <EditText
+                       android:id="@+id/titoloItaliano"
+                       style="@style/editText"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text=""
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.741"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/textView22It"/>
+
+
+                <TextView
+                    android:id="@+id/textView13"
+                    style="@style/titoliColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text="@string/categoria"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/titoloItaliano" />
+
+                <Spinner
+                    android:id="@+id/spinner_categoria"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+
+                <TextView
+                    android:id="@+id/textViewTag"
+                    style="@style/titoliColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text="@string/tags"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_categoria" />
+
+
+                <Spinner
+                    android:id="@+id/spinner_tags"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTag" />
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cat_attrazione_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_tags"
+                    tools:listitem="@layout/listitem_cms_attrazione_tag_list" />
+
+
+                   <TextView
+                       android:id="@+id/textViewSitoWeb"
+                       style="@style/titoliColor"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginTop="28dp"
+                       android:layout_marginEnd="8dp"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text="@string/sitoweb"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.571"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/cat_attrazione_recycler_view" />
+
+                <EditText
+                    android:id="@+id/editTextSitoWeb"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="textUri"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewSitoWeb" />
+
+
+                   <TextView
+                       android:id="@+id/textViewEmail"
+                       style="@style/titoliColor"
+                       android:layout_width="0dp"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginTop="28dp"
+                       android:layout_marginEnd="8dp"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text="@string/email"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.571"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/editTextSitoWeb" />
+
+                <EditText
+                    android:id="@+id/editTextEmail"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="textEmailAddress"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewEmail" />
+
+
+                <TextView
+                    android:id="@+id/textViewTelefono"
+                    style="@style/titoliColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text="@string/telefono"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
+
+                <EditText
+                    android:id="@+id/editTextTelefono"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="phone"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewTelefono" />
+
+
+                   <TextView
+                       android:id="@+id/textViewDescrizione"
+                       style="@style/titoliColor"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginTop="18dp"
+                       android:layout_marginEnd="8dp"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text="@string/descrizione"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.571"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/editTextTelefono" />
+
+                   <EditText
+                       android:id="@+id/editTextDescrizione"
+                       style="@style/editText"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:inputType="textMultiLine"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text=""
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.741"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/textViewDescrizione" />
+
+
+                   <TextView
+                       android:id="@+id/textViewDescrizioneItaliana"
+                       style="@style/titoliColor"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginTop="28dp"
+                       android:layout_marginEnd="8dp"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text="Descrizione italiana"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.571"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/editTextDescrizione" />
+
+                   <EditText
+                       android:id="@+id/editTextDescrizioneItaliano"
+                       style="@style/editText"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:layout_marginStart="8dp"
+                       android:layout_marginEnd="8dp"
+                       android:inputType="textMultiLine"
+                       android:orientation="vertical"
+                       android:padding="16dp"
+                       android:text=""
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintHorizontal_bias="0.741"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toBottomOf="@+id/textViewDescrizioneItaliana" />
+
+                <TextView
+                    android:id="@+id/textViewOrario"
+                    style="@style/titoliColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text="@string/orario_cms"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextDescrizioneItaliano" />
+
+                <EditText
+                    android:id="@+id/editTextOrario"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="textMultiLine"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text=""
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewOrario" />
+
+
+                <TextView
+                    android:id="@+id/textViewCosto"
+                    style="@style/titoliColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text="@string/costo"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextOrario" />
+
+                <Spinner
+                    android:id="@+id/spinner_costo"
+                    style="@style/editText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textViewCosto" />
+
+
+                <TextView
+                    android:id="@+id/textVievLat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text="@string/latitudine"
+                    style="@style/titoliColor"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/spinner_costo" />
+
+                <EditText
+                    android:id="@+id/editTextLat"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="numberDecimal"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text=""
+                   style="@style/editText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textVievLat" />
+
+
+                <TextView
+                    android:id="@+id/textVievLng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginEnd="8dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    style="@style/titoliColor"
+                    android:text="@string/longitudine"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.571"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/editTextLat" />
+
+                <EditText
+                    android:id="@+id/editTextLng"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:inputType="numberDecimal"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:text=""
+                    style="@style/editText"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.741"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textVievLng" />
+            </android.support.constraint.ConstraintLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+
+    <include layout="@layout/navigation_cms_menu"/>
+</android.support.v4.widget.DrawerLayout>

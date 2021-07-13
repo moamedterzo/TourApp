@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linFotoScelta"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/shape_dialog"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    android:layout_margin="16dp">
+
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/pros_cam_dialog"
+    android:textAlignment="center"
+    android:textSize="23sp"
+    android:textColor="@color/greyPrimary"
+    android:paddingBottom="6dp"/>
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="351dp"
+        android:layout_height="113dp"
+        android:padding="16dp"
+        android:layout_gravity="center">
+
+
+        <ImageView
+            android:id="@+id/gallerydialogbtn"
+            android:layout_width="111dp"
+            android:layout_height="91dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/gallery" />
+
+        <ImageView
+            android:id="@+id/cameradialogbtn"
+            android:layout_width="111dp"
+            android:layout_height="91dp"
+            android:layout_marginStart="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            app:srcCompat="@drawable/ic_photocamera_24dp" />
+    </android.support.constraint.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/canceldialogbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Chiudi"
+        android:textAlignment="center"
+        android:textColor="@color/colorGiall"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

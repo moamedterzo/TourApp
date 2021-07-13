@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@+id/filter_bar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:elevation="8dp"
+    android:foreground="?attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical">
+
+        <ImageView
+            android:id="@+id/button_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:tint="@color/greySecondary"
+            app:srcCompat="@drawable/ic_search" />
+
+        <LinearLayout
+            android:id="@+id/text_current_search_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/button_filter"
+            android:orientation="vertical"
+            android:paddingBottom="8dp"
+            android:paddingTop="8dp">
+
+            <!-- INFO SULLA RICERCA CORRENTE-->
+            <TextView
+                android:id="@+id/text_current_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/greySecondary"
+                tools:text="Filter" />
+
+
+        </LinearLayout>
+
+        <!-- IMMAGINE ANNULLA FILTRI-->
+        <ImageView
+            android:id="@+id/image_clear_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:tint="@color/greySecondary"
+            app:srcCompat="@drawable/ic_close_white_24px" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

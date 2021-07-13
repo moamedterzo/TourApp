@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@drawable/shape_attr">
+
+        <ImageView
+            android:id="@+id/imgDettagliAttr"
+            android:layout_width="125dp"
+            android:layout_height="125dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_marginBottom="5dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:srcCompat="@drawable/castle" />
+
+        <TextView
+            android:id="@+id/txtDettagliAttrazione"
+            style="@style/titoliColor"
+            android:layout_width="257dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="13dp"
+            android:layout_toEndOf="@+id/imgDettagliAttr"
+            android:maxLines="1"
+            android:padding="2dp"
+            android:textAlignment="viewStart"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgDettagliAttr"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtClickDettagli"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="72dp"
+            android:layout_below="@+id/txtDettagliAttrazione"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_toEndOf="@+id/imgDettagliAttr"
+            android:maxLines="6"
+            android:padding="2dp"
+            android:text="@string/dettagli"
+            android:textAlignment="viewStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imgDettagliAttr"
+            app:layout_constraintTop_toBottomOf="@+id/txtDettagliAttrazione"
+            app:layout_constraintVertical_bias="0.0" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>

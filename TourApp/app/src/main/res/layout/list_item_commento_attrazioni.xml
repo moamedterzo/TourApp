@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgUtente"
+        android:layout_width="56dp"
+        android:layout_height="51dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        app:civ_border_color="@color/colorGiall"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:srcCompat="@drawable/castle" />
+
+    <TextView
+        android:id="@+id/txtData"
+        style="@style/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNomeUtente"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/imgUtente"
+        android:text="@string/dettagli" />
+
+    <TextView
+        android:id="@+id/txtCommento"
+        style="@style/titoliColor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rating"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="2dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp" />
+
+
+    <TextView
+        android:id="@+id/txtNomeUtente"
+        style="@style/editText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:layout_alignTop="@+id/imgUtente"
+        android:layout_marginStart="0dp"
+        android:layout_toEndOf="@id/imgUtente"
+        android:text="@string/dettagli"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtData"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RatingBar
+        android:id="@+id/rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtData"
+
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="2dp"
+        android:numStars="5"
+        tools:layout_editor_absoluteY="120dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shadow"
+        android:backgroundTint="@color/Bianco"
+        android:padding="5dp"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-27dp"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,210 @@
+<resources>
+    <string name="app_name">TourApp</string>
+    <string name="Login">LOGIN</string>
+    <string name="Ospite">GUEST</string>
+    <string name="Iscriviti">SIGN IN</string>
+    <string name="imageTourApp">imageTourApp</string>
+    <string name="email">Email</string>
+    <string name="psw">Password</string>
+    <string name="title_activity_registration">RegistrationActivity</string>
+    <string name="title_activity_settings">SettingsActivity</string>
+
+    <string name="explorButton">Explore</string>
+    <string name="eatBtn">EAT</string>
+    <string name="sleepBtn">SLEEP</string>
+    <string name="visitBtn">VISIT</string>
+    <string name="funBtn">HAVE FUN</string>
+
+
+    <string name="toolbarTitle">Android Bluetooth Example</string>
+    <string name="openbt">Open Bluetooth</string>
+    <string name="makeVisible">Make Bluetooth Visible</string>
+    <string name="findDevices">Find Devices</string>
+
+    <!--  UtilizzoCouponActivity -->
+    <string name="send">Send</string>
+    <string name="not_connected">You are not connected to a device</string>
+    <string name="bt_not_enabled_leaving">Bluetooth was not enabled. Leaving Bluetooth Chat.</string>
+    <string name="title_connecting">connecting...</string>
+    <string name="title_connected_to">connected: </string>
+    <string name="title_not_connected">not connected</string>
+    <!--  ElencoDispositiviActivity -->
+    <string name="scanning">scanning for devices...</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_paired">No devices have been paired</string>
+    <string name="none_found">No devices found</string>
+    <string name="title_paired_devices">Paired Devices</string>
+    <string name="title_other_devices">Other Available Devices</string>
+    <string name="button_scan">Scan for devices</string>
+    <!-- Options Menu -->
+    <string name="connect">Connect a device</string>
+    <string name="discoverable">Make discoverable</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_list_home">ListActivityHome</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_def">Explore</string>
+
+    <string name="tutti">All</string>
+    <string name="utente_tipo">Type</string>
+    <string name="utente_tipo_admin">Admin</string>
+    <string name="utente_tipo_visitatore">Visitor</string>
+    <string name="utente_tipo_operatore">Operator</string>
+
+
+    <string name="title_activity_diario">DiarioActivity</string>
+    <string name="vecchia_psw">OLD PASSWORD</string>
+    <string name="nuova_psw">NEW PASSWORD</string>
+    <string name="conf_psw">CONFIRM  PASSWORD</string>
+    <string name="conf">CONFIRMATION</string>
+    <string name="annulla">CANCEL</string>
+    <string name="filtr">Filter</string>
+    <string name="applica">Apply</string>
+    <string name="picture_camera">Take a picture from camera</string>
+    <string name="choose_ga">"Choose the photo from the gallery "</string>
+    <string name="no_tks">No,thanks</string>
+    <string name="profile">My profile</string>
+    <string name="nominative">Nominative</string>
+    <string name="Email" translatable="false">Email</string>
+    <string name="nascita">Date of birth</string>
+    <string name="reg">Registration</string>
+    <string name="enter_n">Enter Name</string>
+    <string name="enter_e">Enter Email</string>
+    <string name="enter_d">Enter Date of Birth</string>
+    <string name="pasw">Password Visibility Toggle</string>
+    <string name="photo">Insert photos</string>
+    <string name="profile_photo">Profile photo</string>
+    <string name="myapp" translatable="false">myapp</string>
+    <string name="registrati">Sign in</string>
+    <string name="reg_google">sign in with google</string>
+    <string name="categorie_attr">Attractions Categories</string>
+    <string name="imgDettaglio" translatable="false">imgDettaglio</string>
+    <string name="dettagli">Details...</string>
+    <string name="bello_foto">What\'s beautiful in my picture ...</string>
+    <string name="mod">Change</string>
+    <string name="elimina">Delete</string>
+    <string name="mio_diario">My Diary</string>
+    <string name="luogo">Place:</string>
+    <string name="Use">use</string>
+    <string name="descriz_coup">This coupon can be used by...</string>
+    <string name="my_coup">My coupon</string>
+    <string name="utenti">Users</string>
+    <string name="dett_utente">User detail</string>
+    <string name="tag_att_dett">Attraction tag detail</string>
+    <string name="titolo_eng">Title in english</string>
+    <string name="titolo_it">Title in italian</string>
+    <string name="categoria">Category</string>
+    <string name="tag_attrazioni">Tag attractions</string>
+    <string name="area_privata">Private Area</string>
+    <string name="dati_gen">General data</string>
+    <string name="nome_citt">City name</string>
+    <string name="coupon_dett">Coupon detail</string>
+    <string name="data_valid_i">Effective start date</string>
+    <string name="data_valid_f">End of validity date</string>
+    <string name="tipo_sconto">Discount type</string>
+    <string name="importo">Amount</string>
+    <string name="categ_coup">Coupon categories</string>
+    <string name="dett_cat_coupon">Coupon category detail</string>
+    <string name="dett_cat_attr">Attraction category detail</string>
+
+    <string name="dett_attrazione">Attraction detail</string>
+    <string name="attrazioni">Attractions</string>
+    <string name="del_attrazione">Delete attraction</string>
+
+
+    <string name="errore_campo_obbligatorio">Required field</string>
+    <string name="errore_email_valida">Wrong email</string>
+    <string name="logout" translatable="false">Logout</string>
+    <string name="location" translatable="false">Location</string>
+    <string name="area_pub">Public area</string>
+    <string name="coupon" translatable="false">Coupon</string>
+    <string name="coupon_utilizza">Use Coupon</string>
+    <string name="attractions">Attractions</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="salva">Save</string>
+    <string name="up_image">Upload image</string>
+    <string name="mod_psw">Change password</string>
+    <string name="elim_utente">Delete user</string>
+    <string name="del_tag">Delete tag</string>
+    <string name="del_coup">Delete coupon</string>
+    <string name="del_cat">Delete category</string>
+    <string name="inser_psw">Enter the same password</string>
+    <string name="psw_err">Old password incorrect</string>
+    <string name="foto_ins">Photo inserted successfully</string>
+    <string name="perm_g">Permission granted</string>
+    <string name="perm_d">Permission denied</string>
+    <string name="email_spec">The specified e-mail address</string>
+    <string name="reg_succ">" You have successfully registered"</string>
+    <string name="ut_google">An existing Google user has already been used by another account</string>
+    <string name="ut_non_esist">User not existing</string>
+    <string name="log_suc">Login successful</string>
+    <string name="cred_err">Wrong credentials</string>
+    <string name="seleziona">Select</string>
+    <string name="salva_mod">Save to make the changes effective</string>
+    <string name="ut_insert">User entered successfully</string>
+    <string name="ut_elim">User successfully deleted</string>
+    <string name="insert_coupon">Coupon successfully inserted</string>
+    <string name="elim_coupon">Coupon successfully deleted</string>
+    <string name="period_valid">Validity period from</string>
+    <string name="cat_entered">Category entered successfully</string>
+    <string name="cat_elim">Category successfully deleted</string>
+    <string name="tag_insert">Tag successfully inserted</string>
+    <string name="tag_elim">Tag successfully deleted</string>
+    <string name="logout_succ">Successful logout</string>
+    <string name="dati_salv">Data saved successfully</string>
+    <string name="esplora">Explore</string>
+    <string name="home" translatable="false">Home</string>
+<string name="dialog_gps">Please Turn ON your GPS Connection</string>
+    <string name="sezione_operatore">Operator section</string>
+    <string name="diario_emozioni">My emotions...</string>
+    <string name="diario_luogo">Place</string>
+    <string name="orario">Timetables:</string>
+    <string name="contatti">Contacts</string>
+    <string name="descrizione">Description</string>
+    <string name="coupon_già_util">Coupon already USED</string>
+    <string name="coupon_preferiti">My coupons</string>
+    <string name="coupon_aggiunto">Coupon Added to prefereces</string>
+    <string name="coupon_rimosso">Coupon Removed from prefereces</string>
+    <string name="coupon_validita_da">Period of validity from</string>
+    <string name="coupon_validita_a">to</string>
+    <string name="coupon_utilizzato_label">Used</string>
+    <string name="coupon_scaduto_label">Expired</string>
+    <string name="coup_accept">OK-COUPON ACCEPTED</string>
+    <string name="pros_cam_dialog">Choose how to proceed</string>
+    <string name="costo">Cost</string>
+    <string name="costo_economico">Economic</string>
+    <string name="costo_normale">Normal</string>
+    <string name="costo_costoso">Expensive</string>
+
+    <string name="sitoweb">Website</string>
+    <string name="telefono">Telephone</string>
+    <string name="orario_cms">Timetable</string>
+    <string name="tags" translatable="false">Tags</string>
+    <string name="recycleView_vuoto">No result found</string>
+    <string name="title_activity_esplora">Map</string>
+    <string name="longitudine">Longitude</string>
+    <string name="latitudine">Latitude</string>
+    <string name="Bluetooth" translatable="false">Bluetooth</string>
+    <string name="invia_recensione">Send review</string>
+    <string name="inserisci_recensione">Insert review</string>
+    <string name="percentuale_sconto">Discount applied</string>
+
+    <string name="discoverable_already_set">Your device is already discoverable</string>
+    <string name="use_coupon">Use this coupon</string>
+    <string name="use_coupon_desc">Do you want to use this coupon? (The action is not reversible)</string>
+    <string name="yes">Yes</string>
+    <string name="no" translatable="false">No</string>
+    <string name="coupon_gia_utilizzato">Coupon already used</string>
+    <string name="coupon_utilizzato">Coupon used with success</string>
+    <string name="ricerca_dispositivi">Research devices</string>
+    <string name="ricerca_in_corso">Researching devices...</string>
+    <string name="bluetooth_not_avalaible">Bluetooth is not available</string>
+
+    <string name="bluetooth_ok_discoverable">Your device is online</string>
+</resources>

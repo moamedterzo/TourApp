@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "139578417639",
+    "firebase_url": "https://tourapp-6eaa1.firebaseio.com",
+    "project_id": "tourapp-6eaa1",
+    "storage_bucket": "tourapp-6eaa1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:139578417639:android:311c5469a4cab48c",
+        "android_client_info": {
+          "package_name": "it.uniba.gruppo5.tourapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "139578417639-b4at4jhehfj7k0corh2suhibj3kkdqvp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDmSaXYQOK9uTKizQyvAJplD-gd_M5oDks"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout
+    android:id="@+id/drawer_layout_cms"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cms.CmsUtentiActivity">
+
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBackgraound">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="766dp"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorAppBar"
+                android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+                app:title="@string/tag_attrazioni" />
+
+            <include layout="@layout/card_view_filters" />
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/cat_attrazione_recycler_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="557dp"
+                    tools:listitem="@layout/listitem_cms_tag_attrazione" />
+            </LinearLayout>
+
+            </ScrollView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="75dp" />
+        </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_nuovo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end|bottom"
+            android:layout_margin="16dp"
+            android:src="@drawable/ic_plus" />
+
+    </android.support.design.widget.CoordinatorLayout>
+
+    <include layout="@layout/navigation_cms_menu"/>
+
+</android.support.v4.widget.DrawerLayout>
